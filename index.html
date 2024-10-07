@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keyboard Checker</title>
+  <!-- tailwind cdn  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='style.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container  m-auto my-8 p-auto">
+    <h1 class="text-3xl">Keyboard Checker</h1>
+    <!-- Keyboard Start -->
+    <div class="keyboard">
+      <div class="keyboard__row keyboard__row--h1">
+        <div data-key="27" class="key--word">
+          <span>esc</span>
+        </div>
+        <div data-key="112" class="key--fn">
+          <span>F1</span>
+        </div>
+        <div data-key="113" class="key--fn">
+          <span>F2</span>
+        </div>
+        <div data-key="114" class="key--fn">
+          <span>F3</span>
+        </div>
+        <div data-key="115" class="key--fn">
+          <span>F4</span>
+        </div>
+        <div data-key="116" class="key--fn">
+          <span>F5</span>
+        </div>
+        <div data-key="117" class="key--fn">
+          <span>F6</span>
+        </div>
+        <div data-key="118" class="key--fn">
+          <span>F7</span>
+        </div>
+        <div data-key="119" class="key--fn">
+          <span>F8</span>
+        </div>
+        <div data-key="120" class="key--fn">
+          <span>F9</span>
+        </div>
+        <div data-key="121" class="key--fn">
+          <span>F10</span>
+        </div>
+        <div data-key="122" class="key--fn">
+          <span>F11</span>
+        </div>
+        <div data-key="123" class="key--fn">
+          <span>F12</span>
+        </div>
+        <div data-key="n/a" class="key--word">
+          <span>pwr</span>
+        </div>
+      </div>
+      <div class="keyboard__row">
+        <div class="key--double" data-key="192">
+          <div>~</div>
+          <div>`</div>
+        </div>
+        <div class="key--double" data-key="49">
+          <div>!</div>
+          <div>1</div>
+        </div>
+        <div class="key--double" data-key="50">
+          <div>@</div>
+          <div>2</div>
+        </div>
+        <div class="key--double" data-key="51">
+          <div>#</div>
+          <div>3</div>
+        </div>
+        <div class="key--double" data-key="52">
+          <div>$</div>
+          <div>4</div>
+        </div>
+        <div class="key--double" data-key="53">
+          <div>%</div>
+          <div>5</div>
+        </div>
+        <div class="key--double" data-key="54">
+          <div>^</div>
+          <div>6</div>
+        </div>
+        <div class="key--double" data-key="55">
+          <div>&</div>
+          <div>7</div>
+        </div>
+        <div class="key--double" data-key="56">
+          <div>*</div>
+          <div>8</div>
+        </div>
+        <div class="key--double" data-key="57">
+          <div>(</div>
+          <div>9</div>
+        </div>
+        <div class="key--double" data-key="48">
+          <div>)</div>
+          <div>0</div>
+        </div>
+        <div class="key--double" data-key="189">
+          <div>_</div>
+          <div>-</div>
+        </div>
+        <div class="key--double" data-key="187">
+          <div>+</div>
+          <div>=</div>
+        </div>
+        <div class="key--bottom-right key--word key--w4" data-key="8">
+          <span>delete</span>
+        </div>
+      </div>
+      <div class="keyboard__row">
+        <div class="key--bottom-left key--word key--w4" data-key="9">
+          <span>tab</span>
+        </div>
+        <div class="key--letter" data-char="Q">Q</div>
+        <div class="key--letter" data-char="W">W</div>
+        <div class="key--letter" data-char="E">E</div>
+        <div class="key--letter" data-char="R">R</div>
+        <div class="key--letter" data-char="T">T</div>
+        <div class="key--letter" data-char="Y">Y</div>
+        <div class="key--letter" data-char="U">U</div>
+        <div class="key--letter" data-char="I">I</div>
+        <div class="key--letter" data-char="O">O</div>
+        <div class="key--letter" data-char="P">P</div>
+        <div class="key--double" data-key="219" data-char="{[">
+          <div>{</div>
+          <div>[</div>
+        </div>
+        <div class="key--double" data-key="221" data-char="}]">
+          <div>}</div>
+          <div>]</div>
+        </div>
+        <div class="key--double" data-key="220" data-char="|\">
+          <div>|</div>
+          <div>\</div>
+        </div>
+      </div>
+      <div class="keyboard__row">
+        <div class="key--bottom-left key--word key--w5" data-key="20">
+          <span>caps lock</span>
+        </div>
+        <div class="key--letter" data-char="A">A</div>
+        <div class="key--letter" data-char="S">S</div>
+        <div class="key--letter" data-char="D">D</div>
+        <div class="key--letter" data-char="F">F</div>
+        <div class="key--letter" data-char="G">G</div>
+        <div class="key--letter" data-char="H">H</div>
+        <div class="key--letter" data-char="J">J</div>
+        <div class="key--letter" data-char="K">K</div>
+        <div class="key--letter" data-char="L">L</div>
+        <div class="key--double" data-key="186">
+          <div>:</div>
+          <div>;</div>
+        </div>
+        <div class="key--double" data-key="222">
+          <div>"</div>
+          <div>'</div>
+        </div>
+        <div class="key--bottom-right key--word key--w5" data-key="13">
+          <span>return</span>
+        </div>
+      </div>
+      <div class="keyboard__row">
+        <div class="key--bottom-left key--word key--w6" data-key="16">
+          <span>shift</span>
+        </div>
+        <div class="key--letter" data-char="Z">Z</div>
+        <div class="key--letter" data-char="X">X</div>
+        <div class="key--letter" data-char="C">C</div>
+        <div class="key--letter" data-char="V">V</div>
+        <div class="key--letter" data-char="B">B</div>
+        <div class="key--letter" data-char="N">N</div>
+        <div class="key--letter" data-char="M">M</div>
+        <div class="key--double" data-key="188">
+          <div>&lt;</div>
+          <div>,</div>
+        </div>
+        <div class="key--double" data-key="190">
+          <div>&gt;</div>
+          <div>.</div>
+        </div>
+        <div class="key--double" data-key="191">
+          <div>?</div>
+          <div>/</div>
+        </div>
+        <div class="key--bottom-right key--word key--w6" data-key="16-R">
+          <span>shift</span>
+        </div>
+      </div>
+      <div class="keyboard__row keyboard__row--h3">
+        <div class="key--bottom-left key--word">
+          <span>fn</span>
+        </div>
+        <div class="key--bottom-left key--word key--w1" data-key="17">
+          <span>control</span>
+        </div>
+        <div class="key--bottom-left key--word key--w1" data-key="18">
+          <span>option</span>
+        </div>
+        <div class="key--bottom-right key--word key--w3" data-key="91">
+          <span>command</span>
+        </div>
+        <div class="key--double key--right key--space" data-key="32" data-char=" ">
+          &nbsp;
+        </div>
+        <div class="key--bottom-left key--word key--w3" data-key="93-R">
+          <span>command</span>
+        </div>
+        <div class="key--bottom-left key--word key--w1" data-key="18-R">
+          <span>option</span>
+        </div>
+        <div data-key="37" class="key--arrow">
+          <span>&#9664;</span>
+        </div>
+        <div class="key--double key--arrow--tall" data-key="38">
+          <div>&#9650;</div>
+          <div>&#9660;</div>
+        </div>
+        <div data-key="39" class="key--arrow">
+          <span>&#9654;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- keyboard END -->
+  <footer class="bg-gray-800 absolute bottom-0 w-screen text-white py-6 mt-10">
+    <div class=" mx-auto text-center">
+      <p class="text-sm mb-4">&copy; 2024 Keyboard Checker. All rights reserved.</p>
+
+      <!-- Social Media Links -->
+      <div class="flex justify-center space-x-6 mb-4">
+        <ul class="example-2">
+          <li class="icon-content">
+            <a href="https://facebook.com/bima.jovanta.7" aria-label="Facebook" data-social="facebook">
+              <div class="filled"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-facebook w-6 h-6" viewBox="0 0 24 24" xml:space="preserve">
+                <path fill-rule="evenodd"
+                  d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                  clip-rule="evenodd" />
+
+              </svg>
+            </a>
+
+
+            <div class="tooltip">Facebook</div>
+          </li>
+          <li class="icon-content">
+            <a href="https://www.github.com/bimadevs" aria-label="GitHub" data-social="github">
+              <div class="filled"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16" xml:space="preserve">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+            <div class="tooltip">GitHub</div>
+          </li>
+          <li class="icon-content">
+            <a href="https://www.instagram.com/biimaa_jo" aria-label="Instagram" data-social="instagram">
+              <div class="filled"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16" xml:space="preserve">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+            <div class="tooltip">Instagram</div>
+          </li>
+          <li class="icon-content">
+            <a href="https://wa.me/6282254044783" aria-label="Whatsapp" data-social="whatsapp">
+              <div class="filled"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+                viewBox="0 0 24 24" xml:space="preserve">
+                <path fill="currentColor" fill-rule="evenodd"
+                  d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+                  clip-rule="evenodd" />
+                <path fill="currentColor"
+                  d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z" />
+              </svg>
+            </a>
+            <div class="tooltip">Whatsapp</div>
+          </li>
+        </ul>
+
+      </div>
+
+      <p class="text-xs text-gray-400">Designed by <a href="https://bimadev.xyz">BimaDev</a></p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
